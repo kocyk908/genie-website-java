@@ -51,7 +51,7 @@ jobs:
           name: Package
           path: target
 
-      - name: Set lower case repo name and tag
+      - name: Set lower case repo name & tag
         run: |
           echo "GH_REPO_LC=${GITHUB_REPOSITORY,,}" >> "$GITHUB_ENV"
           echo "TAG_NAME=$(echo "$REF_NAME" | tr '[:upper:]' '[:lower:]' | sed 's|/|-|g')" >> "$GITHUB_ENV"
