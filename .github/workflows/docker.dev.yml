@@ -119,7 +119,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Trivy Code Scan
+      - name: Trivy Code Scaning
         uses: aquasecurity/trivy-action@master
         with:
           scan-type: 'fs'
